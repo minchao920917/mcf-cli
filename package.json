@@ -7,7 +7,7 @@
     "mcf-init": "bin/mcf-init"
   },
   "name": "mcf-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
