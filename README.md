@@ -20,8 +20,9 @@ Open your terminal and type mcf or mcf -h , you'll see the help infomation below
     add       Add a new template
     delete    Delete a template
     list      List all the templates
-    init      Generate a new project
-
+    init      Copy a project from template
+    create-vue    fastly create A vue project
+ 
   Options:
 
     -h, --help     output usage information
