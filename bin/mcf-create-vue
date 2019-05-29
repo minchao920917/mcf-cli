@@ -87,6 +87,11 @@ function go() {
         message: '项目的简介',
         default: `A project named ${context.name}`
       }
+      , {
+        name: 'projectAuthor',
+        message: '项目的创建人',
+        default: `minchao`
+      }
     ]).then(answers => {
       return {
         ...context,
