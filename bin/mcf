@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 const program = require('commander')
-
-program
-  .command('mcf-cli(闵长峰脚手架) 自己为自己写的一个脚手架工具:')
-  .command('1、避免创建项目时手动复制不全的尴尬')
-  .command('2、让项目从"搭建-开发-部署"更加快速以及规范')
-  .command('3、多了解点原理，多学点东西总是好的')
+const chalk = require('chalk')
+console.log('**********************************************************************');
+console.log('*      '+chalk.red('mcf-cli(闵长峰脚手架) 为自己写的一个脚手架工具:')+'               *');
+console.log('*      '+chalk.green('1、让项目从"搭建-开发-部署"更加快速以及规范')+'                   *');
+console.log('*      '+chalk.green('2、避免创建项目时手动复制不全的尴尬')+'                           *');
+console.log('*      '+chalk.green('3、多了解点原理，多学点东西总是好的')+'                           *');
+console.log('**********************************************************************');
 program
   .version(require('../package').version)
   .usage('<command> [options]')

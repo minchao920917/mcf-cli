@@ -6,15 +6,15 @@ const generator = require('../lib/generator')
 
 // 命令行交互工具
 const program = require('commander')
-// Match files using the patterns the shell uses, like stars and stuff.
+//使用shell使用的模式匹配文件，比如星号之类的
 const glob = require('glob')
 
 // 终端交互工具
 const inquirer = require('inquirer')
 
-// Terminal string styling done right
+// 终端字符串样式设置正确
 const chalk = require('chalk')
-// Colored symbols for various log levels
+// 各种日志级别的彩色符号
 const logSymbols = require('log-symbols')
 
 program.usage('<project-name>')
