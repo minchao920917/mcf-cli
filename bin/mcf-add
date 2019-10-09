@@ -19,7 +19,7 @@ let question = [
       if (val === '') {
         return 'Name is required!'
       } else if (tplObj[val]) {
-        return 'Template has already existed!'
+        return 'Template name has already existed!'
       } else {
         return true
       }
@@ -46,7 +46,7 @@ inquirer
     fs.writeFile(`${__dirname}/../template.json`, JSON.stringify(tplObj), 'utf-8', err => {
       if (err) console.log(err)
       console.log('\n')
-      console.log(chalk.green('Added successfully!\n'))
+      console.log(chalk.green('O(∩_∩)~ Added successfully!\n'))
       console.log(chalk.grey('The latest template list is: \n'))
       console.log(tplObj)
       console.log('\n')

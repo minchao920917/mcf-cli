@@ -2,12 +2,17 @@
 const program = require('commander')
 
 program
+  .command('mcf-cli(闵长峰脚手架) 自己为自己写的一个脚手架工具:')
+  .command('1、避免创建项目时手动复制不全的尴尬')
+  .command('2、让项目从"搭建-开发-部署"更加快速以及规范')
+  .command('3、多了解点原理，多学点东西总是好的')
+program
   .version(require('../package').version)
   .usage('<command> [options]')
-  .command('add', '添加新的模板 mcf add')
-  .command('delete', '删除模板 mcf list')
-  .command('list', '展示模板列表 mcf list')
-  .command('init', '从模板复制项目 mcf init <模板名> 项目名')
+  .command('add', '添加新的源 mcf add')
+  .command('delete', '删除源 mcf list')
+  .command('list', '展示源列表 mcf list')
+  .command('init', '从源初始化项目 mcf init <模板名> 项目名')
   .command('create-vue', '快速构建新vue项目 mcf create-vue <项目名>')
 
 program.parse(process.argv)
