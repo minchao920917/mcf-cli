@@ -8,7 +8,7 @@
     "mcf-create-vue": "bin/mcf-create-vue"
   },
   "name": "mcf-cli",
-  "version": "1.1.0",
+  "version": "1.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
