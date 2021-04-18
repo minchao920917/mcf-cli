@@ -23,6 +23,7 @@ Open your terminal and type mcf or mcf -h , you'll see the help infomation below
     init      Copy a project from template
     create-vue    fastly create A vue project
     vue-admin    fastly create A vue-element admin project
+    react-multi <projectName>  fastly create A react multi project
  
   Options:
 
@@ -55,8 +56,9 @@ MIT.
     delete    删除你的模板，只要给出list中的模板名称
     list      查看你的模板列表
     init      通过命令的模板初始化项目  mcf init <模板名称> <项目名称>
-    create-vue    通过命令直接创建vue项目  mcf create-vue <项目名称>
-    vue-admin   快速构建新vue项目 mcf vue-admin <项目名>
+    create-vue <projectName>   通过命令直接创建vue项目  mcf create-vue <项目名称>
+    vue-admin <projectName>  快速构建新vue项目 mcf vue-admin <项目名>
+    react-multi <projectName>  快速构建多页面的react项目
 
   Options:
 
