@@ -27,12 +27,18 @@ program
   .command("list", "展示源列表 mcf list")
   .command("init", "从源初始化项目 mcf init <模板名> 项目名")
   .command("工程化项目", "---------------")
-  .usage("<command> [options]")
-  .command("vue-admin", "快速构建新vue项目 mcf vue-admin <项目名>");
+  .usage("<command> [options]");
+
+program
+  .command("vue-app <projectName>")
+  .description("快速构建新vue-app项目")
+  .action(require("../lib/mcf-vue-app"));
+program
+  .command("vue-admin <projectName>")
+  .description("快速构建新vue-admin项目")
+  .action(require("../lib/mcf-vue-admin"));
   program
-  .command('vue-app <projectName>')
-    .description('快速构建新vue-app项目')
-    .action(
-        require('../lib/mcf-vue-app')
-    )
+  .command("react-multi <projectName>")
+  .description("快速构建多页面的react项目")
+  .action(require("../lib/mcf-react-multi"));
 program.parse(process.argv);
